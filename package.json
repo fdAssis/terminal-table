@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "yarn nodemon --ignore database.json --exec node --experimental-json-modules src/index.js"
+  },
   "dependencies": {
     "chalk": "4",
     "chalk-table": "1",
