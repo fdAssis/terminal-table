@@ -7,5 +7,8 @@
     "chalk": "4",
     "chalk-table": "1",
     "draftlog": "1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
