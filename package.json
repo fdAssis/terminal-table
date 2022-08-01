@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "yarn nodemon --ignore database.json --exec node --experimental-json-modules src/index.js"
+    "dev": "yarn nodemon --ignore database.json --exec node --experimental-json-modules --experimental-top-level-await src/index.js"
   },
   "dependencies": {
     "chalk": "4",
