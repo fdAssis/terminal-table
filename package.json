@@ -5,6 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "test": "yarn mocha -w --parallel test/*.test.js",
+    "test:cov": "yarn nyc yarn mocha -r reify --parallel test/*.test.js",
     "dev": "yarn nodemon --ignore database.json --exec node --experimental-json-modules --experimental-top-level-await src/index.js"
   },
   "dependencies": {
@@ -13,6 +15,11 @@
     "draftlog": "1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "chai": "4",
+    "mocha": "8",
+    "nodemon": "^2.0.19",
+    "nyc": "15",
+    "reify": "^0.20.12",
+    "sinon": "9"
   }
 }
